@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reaction Time Tester</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+ <div id="particles-js"></div>
+    
+    <!-- Main game container -->
+    <div class="container">
+        <h1>⚡ Reaction Time Challenge ⚡</h1>
+        <p class="instructions">Click the moving circle as quickly as possible when it appears!</p>
+        
+        <!-- Game statistics -->
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-label">Last Time</div>
+                <div class="stat-value" id="lastTime">--</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Best Time</div>
+                <div class="stat-value" id="bestTime">--</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Average</div>
+                <div class="stat-value" id="avgTime">--</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Attempts</div>
+                <div class="stat-value" id="attempts">0</div>
+            </div>
+        </div>
+        
+        <!-- Game area -->
+        <div class="game-area" id="gameArea">
+            <div class="moving-box" id="movingBox" style="display: none;"></div>
+        </div>
+        
+        <!-- Game controls and messages -->
+        <div class="message" id="gameMessage">Click "Start Game" to begin!</div>
+        <button class="start-button" id="startButton">Start Game</button>
+        <button class="start-button" id="resetButton">Reset Stats</button>
+    </div>
+
+    <!-- Particles.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
